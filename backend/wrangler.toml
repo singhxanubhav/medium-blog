@@ -1,10 +1,13 @@
 name = "backend"
 main = "src/index.ts"
-compatibility_date = "2024-12-17"
+compatibility_date = "2024-12-05"
+
 
 # compatibility_flags = [ "nodejs_compat" ]
 
-# [vars]
-DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiODAwOTJhMTMtOTA1ZC00NGIxLTkzYTktN2YwYjlmYjk1MzczIiwidGVuYW50X2lkIjoiYzI5ZDY5OWNhNmViNTk0M2JmZGI4ZmI2MjU2ODg0YzFjN2RjMTM2MmUyNWIxODYxNzMzZWQxYmI1OWY0ZWE5ZiIsImludGVybmFsX3NlY3JldCI6ImZmNGY1ZTIzLWE2Y2MtNDVkYi05MWQ2LWM3NjBjYjNjMzQxZCJ9.sJoJKpY9N_DdMzC6zUQxFLv5xtpAQtRCAfjBrjun5SY"
+[vars]
+DATABASE_URL="prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiOGY0YWNjMGMtMDU0NC00MDliLTg1NzEtZjc0MzQ2OWFkODI1IiwidGVuYW50X2lkIjoiMTIxYTQ5MDAyZGQwODliYjkzYWQyZjQxNDUxMDEwYzNmZjUwMmM5OGU2NzYxNmU5MTA0OTVmMGY3MGJjYThmYyIsImludGVybmFsX3NlY3JldCI6ImU5YjEyMmY1LWI3NmYtNDQwZC05NjE5LWE1MDUyODUzYjY2NiJ9.1gvdLL9_YILgqQwefKq2XqalQ6FBP_aBlK2Lf9AGjdc"
 
-JWT_SECRET = "anubhavsingh"
+JWT_SECRET = "anubhavxsingh"
+
+

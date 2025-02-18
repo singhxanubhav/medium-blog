@@ -1,1 +1,1 @@
-upadating db (connection polling)
+backend completed:-All end point work properly!!

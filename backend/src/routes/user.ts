@@ -11,6 +11,8 @@ export const userRouter = new Hono<{
   };
 }>();
 
+
+
 //   signup route
 
 userRouter.post("/signup", async (c) => {
@@ -27,8 +29,10 @@ userRouter.post("/signup", async (c) => {
       },
     });
 
+
     // Generate JWT for the user
     const jwt = await sign({ id: user.id }, c.env.JWT_SECRET);
+
 
     // Send the JWT back to the client
     return c.json({ jwt });
@@ -40,6 +44,7 @@ userRouter.post("/signup", async (c) => {
     await prisma.$disconnect();
   }
 });
+
 
 // signin route
 
@@ -56,12 +61,14 @@ userRouter.post("/signin", async (c) => {
     },
   });
 
+
   // Check if user exists
   if (!user) {
     c.status(403);
     return c.json({ error: "user not found" });
   }
 
+  
   // Generate JWT if user is found
   const jwt = await sign({ id: user.id }, c.env.JWT_SECRET);
   return c.json({ jwt });
